@@ -129,6 +129,15 @@
   );
 }
 
+@media (max-width: 767px) {
+  .btn-crayon {
+    filter: none;
+  }
+  .btn-crayon::after {
+    display: none;
+  }
+}
+
 /* Bracket-style button */
 :root  { --bracket-color: rgba(17,17,17,0.4); }
 .dark  { --bracket-color: rgba(202,202,202,0.3); }

@@ -43,7 +43,7 @@ export default function Hero({ onNavigate }) {
     <section
       id="hero"
       ref={ref}
-      className="min-h-screen flex flex-col justify-center pt-20 pb-12 px-6 lg:px-8 max-w-6xl mx-auto"
+      className="min-h-screen flex flex-col justify-center pt-16 pb-16 px-6 lg:px-8 max-w-6xl mx-auto"
     >
       <p className="reveal reveal-delay-1 text-xs font-medium tracking-wider uppercase mb-5 flex flex-wrap items-center gap-x-2.5 gap-y-1.5">
         <span className="text-ink/60 dark:text-ink-50/40">Full Stack Developer</span>
@@ -91,9 +91,15 @@ export default function Hero({ onNavigate }) {
             </button>
             <button
               onClick={() => onNavigate(5)}
-              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase border border-ink/40 dark:border-ink-50/30 text-ink dark:text-ink-50 hover:border-ink dark:hover:border-ink-50 transition-colors duration-200"
+              className="hidden md:inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase border border-ink/40 dark:border-ink-50/30 text-ink dark:text-ink-50 hover:border-ink dark:hover:border-ink-50 transition-colors duration-200"
             >
               Contact Me
+            </button>
+            <button
+              onClick={() => onNavigate(1)}
+              className="md:hidden inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase border border-ink/40 dark:border-ink-50/30 text-ink dark:text-ink-50 hover:border-ink dark:hover:border-ink-50 transition-colors duration-200"
+            >
+              About Me
             </button>
             <a
               href="/resume.pdf"
