@@ -21,13 +21,13 @@ export default function About({ onNavigate }) {
 
             <div className="space-y-3 text-ink dark:text-ink-50 leading-relaxed text-sm">
               <p className="reveal reveal-delay-1">
-                I'm a final year Computer Science undergraduate at IIMS College, Naxal, with a focus on full-stack web development. My core stack is MERN — MongoDB, Express, React, and Node.js — and I've used it to build real projects with real users.
+                I'm a final year Computer Science undergraduate at IIMS College, Naxal, with a focus on full-stack web development. My core stack is MERN (MongoDB, Express, React, and Node.js) and I've used it to build real projects with real users.
               </p>
               <p className="reveal reveal-delay-2">
                 Beyond web, I've worked with Python for data visualization, PHP and MySQL for college projects, and explored AI-powered features through the OpenAI API. I'm comfortable picking up new tools when the problem calls for it.
               </p>
               <p className="reveal reveal-delay-3">
-                I pay attention to details — in code quality, in UI, and in how things actually work end-to-end. I'm looking for an internship where I can contribute from day one and keep learning on the job.
+                I pay attention to details in code quality, in UI, and in how things actually work end-to-end. I'm looking for an internship where I can contribute from day one and keep learning on the job.
               </p>
             </div>
 
