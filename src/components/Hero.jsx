@@ -83,9 +83,10 @@ export default function Hero({ onNavigate }) {
             Final year CS student who pays attention to the details, picks up new things quickly, and genuinely enjoys building. Open to internship opportunities in full-stack, backend, or anything in between.
           </p>
           <div className="flex flex-wrap items-center gap-3">
+            {/* Desktop: View Projects (primary) + Contact Me (secondary) */}
             <button
               onClick={() => onNavigate(2)}
-              className="btn-crayon inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-ink text-cream dark:bg-ink-50 dark:text-dark hover:opacity-80 transition-opacity duration-200"
+              className="hidden md:inline-flex btn-crayon items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-ink text-cream dark:bg-ink-50 dark:text-dark hover:opacity-80 transition-opacity duration-200"
             >
               View Projects <ArrowIcon />
             </button>
@@ -95,11 +96,18 @@ export default function Hero({ onNavigate }) {
             >
               Contact Me
             </button>
+            {/* Mobile: About Me (primary) + View Projects (secondary) */}
             <button
               onClick={() => onNavigate(1)}
+              className="md:hidden inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-ink text-cream dark:bg-ink-50 dark:text-dark hover:opacity-80 transition-opacity duration-200"
+            >
+              About Me <ArrowIcon />
+            </button>
+            <button
+              onClick={() => onNavigate(2)}
               className="md:hidden inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase border border-ink/40 dark:border-ink-50/30 text-ink dark:text-ink-50 hover:border-ink dark:hover:border-ink-50 transition-colors duration-200"
             >
-              About Me
+              View Projects
             </button>
             <a
               href="/resume.pdf"
